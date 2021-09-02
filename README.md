@@ -1,4 +1,4 @@
-# interview-with-DI
+# Using dependancy inversion for trying out some of those interview questions
 This is a base application with DI setup.
 
 You can use this to start creating individual service to inject with the functionality that you need seperated
