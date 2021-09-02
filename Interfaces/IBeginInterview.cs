@@ -1,8 +1,8 @@
 namespace practice.Interfaces
 {
-    public interface IBeginInterview
+    public interface IBeginApplication
     {
-        abstract void StartInterviewQuestions();
+        abstract void StartApplication();
     }
 }
 

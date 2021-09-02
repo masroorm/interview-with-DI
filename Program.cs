@@ -23,16 +23,17 @@
                .ConfigureServices((_, services) =>
                    services
                    .AddScoped<ISort, SortService>()
-                   .AddScoped<IBeginInterview, BeginInterviewService>()
-                   .AddScoped<IDuplicates, DuplicatesService>());
+                   .AddScoped<IBeginApplication, BeginApplicationService>()
+                   .AddScoped<IDuplicates, DuplicatesService>()
+                   .AddScoped<INumberService, NumberService>());
 
         static void ExemplifyScoping(IServiceProvider services, string scope)
         {
             using IServiceScope serviceScope = services.CreateScope();
             IServiceProvider provider = serviceScope.ServiceProvider;
 
-            var startApp = provider.GetRequiredService<IBeginInterview>();
-            startApp.StartInterviewQuestions();
+            var startApp = provider.GetRequiredService<IBeginApplication>();
+            startApp.StartApplication();
 
             System.Environment.Exit(1);
         }

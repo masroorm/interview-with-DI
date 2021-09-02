@@ -5,28 +5,29 @@ namespace practice.Services
     using System.Linq;
     using practice.Interfaces;
 
-    public class BeginInterviewService : IBeginInterview
+    public class BeginApplicationService : IBeginApplication
     {
         private readonly ISort sortService;
         private readonly IDuplicates duplicatesService;
+        private readonly INumberService numberService;
 
-        public BeginInterviewService(
+        public BeginApplicationService(
             ISort sortService,
-            IDuplicates duplicatesService)
+            IDuplicates duplicatesService,
+            INumberService numberService)
         {
             this.sortService = sortService;
             this.duplicatesService = duplicatesService;
+            this.numberService = numberService;
         }
 
-        public void StartInterviewQuestions()
+        public void StartApplication()
         {
-            Console.WriteLine("Begin interview questions");
-
-
+            Console.WriteLine("Begin application here");
 
             // Call the methods here that you need to call
             // this.PlusOne();
-            // this.HasDuplicateNumbers();
+            // this.ShowDuplicateNumbers();
             // this.WriteDistinctSortedValues();
         }
 
@@ -36,23 +37,21 @@ namespace practice.Services
             // where each digits[i] is the ith digit of the integer. 
             // The digits are ordered from most significant to least significant in left-to-right order. 
             // The large integer does not contain any leading 0's.
-            
+
             // Increment the large integer by one and return the resulting array of digits.
             var numbers = new List<int> { 6, 9, 9 };
 
-            // Move this to a service that increments the numbers
-            var joinedString = string.Join(string.Empty, numbers.Select(x => x.ToString()));
-            var number = int.Parse(joinedString) + 1;
-            var newSplitNumbers = number.ToString().Select(x => int.Parse(x.ToString()));
+            var result = this.numberService.AppendArrayOfNumbers(numbers);
 
-            foreach (var value in newSplitNumbers)
+            foreach (var value in result)
             {
                 Console.Write(value + " ");
             }
         }
 
-        private void HasDuplicateNumbers()
+        private void ShowDuplicateNumbers()
         {
+            // Given an array of numbers, print out the number that has duplicates in the given array 
             var numbers = new List<int> { 1, 2, 3, 1 };
             if (this.duplicatesService.HasDuplicates(numbers))
             {
