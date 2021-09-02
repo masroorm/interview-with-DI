@@ -23,7 +23,8 @@ namespace practice.Services
             Console.WriteLine("Begin interview questions");
 
             // Call the methods here that you need to call
-            this.HasDuplicateNumbers();
+            // this.HasDuplicateNumbers();
+            // this.WriteDistinctSortedValues();
         }
 
         private void HasDuplicateNumbers()
