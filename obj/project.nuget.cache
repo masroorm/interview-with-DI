@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SIivwSWmq7nQzJIOR/x1UOcWMiNWJmQ0fUSdouycbqsdMjPdkmBhIrqStslAXVE0urA19wtrUkWanFZ8rhj57A==",
+  "dgSpecHash": "knMykHqGhRzA0bAV/HgpBanFa9Vdap9b8ZxV8x87xdXU8fRKJFInj8LXCW/ht125R7/bv+mVxKlqDiC7ofLe9w==",
   "success": true,
-  "projectFilePath": "D:\\Development\\practice\\practice.csproj",
+  "projectFilePath": "D:\\Development\\interview-with-DI\\practice.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\masro\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\masro\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",

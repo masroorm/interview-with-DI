@@ -22,7 +22,7 @@ namespace practice.Services
         {
             Console.WriteLine("Begin interview questions");
 
-            this.WriteDistinctSortedValues();
+            // Call the methods here that you need to call
         }
 
         private void WriteDistinctSortedValues()

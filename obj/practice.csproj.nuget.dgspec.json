@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Development\\practice\\practice.csproj": {}
+    "D:\\Development\\interview-with-DI\\practice.csproj": {}
   },
   "projects": {
-    "D:\\Development\\practice\\practice.csproj": {
+    "D:\\Development\\interview-with-DI\\practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Development\\practice\\practice.csproj",
+        "projectUniqueName": "D:\\Development\\interview-with-DI\\practice.csproj",
         "projectName": "practice",
-        "projectPath": "D:\\Development\\practice\\practice.csproj",
+        "projectPath": "D:\\Development\\interview-with-DI\\practice.csproj",
         "packagesPath": "C:\\Users\\masro\\.nuget\\packages\\",
-        "outputPath": "D:\\Development\\practice\\obj\\",
+        "outputPath": "D:\\Development\\interview-with-DI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
