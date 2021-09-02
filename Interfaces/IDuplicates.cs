@@ -10,5 +10,3 @@ namespace practice.Interfaces
         abstract IEnumerable<int> GetDuplicates(IEnumerable<int> numbers);
     }
 }
-
-
