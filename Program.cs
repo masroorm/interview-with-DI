@@ -35,16 +35,6 @@
             startApp.StartInterviewQuestions();
 
             System.Environment.Exit(1);
-
-            // OperationLogger logger = provider.GetRequiredService<OperationLogger>();
-            // logger.LogOperations($"{scope}-Call 1 .GetRequiredService<OperationLogger>()");
-
-            // Console.WriteLine("...");
-
-            // logger = provider.GetRequiredService<OperationLogger>();
-            // logger.LogOperations($"{scope}-Call 2 .GetRequiredService<OperationLogger>()");
-
-            // Console.WriteLine();
         }
     }
 }
