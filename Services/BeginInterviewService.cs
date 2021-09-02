@@ -8,14 +8,14 @@ namespace practice.Services
     public class BeginInterviewService : IBeginInterview
     {
         private readonly ISort sortService;
-        private readonly IRemoveDuplicates removeDuplicatesService;
+        private readonly IDuplicates duplicatesService;
 
         public BeginInterviewService(
             ISort sortService,
-            IRemoveDuplicates removeDuplicatesService)
+            IDuplicates duplicatesService)
         {
             this.sortService = sortService;
-            this.removeDuplicatesService = removeDuplicatesService;
+            this.duplicatesService = duplicatesService;
         }
 
         public void StartInterviewQuestions()
@@ -23,6 +23,22 @@ namespace practice.Services
             Console.WriteLine("Begin interview questions");
 
             // Call the methods here that you need to call
+            this.HasDuplicateNumbers();
+        }
+
+        private void HasDuplicateNumbers()
+        {
+            var numbers = new List<int> { 1, 2, 3, 1 };
+            if (this.duplicatesService.HasDuplicates(numbers))
+            {
+                var duplicatesFound = this.duplicatesService.GetDuplicates(numbers);
+
+                foreach (var found in duplicatesFound)
+                {
+                    Console.WriteLine($"Found Duplicate: {found}");
+                }
+            }
+
         }
 
         private void WriteDistinctSortedValues()
@@ -34,7 +50,7 @@ namespace practice.Services
 
             var sorted = this.sortService.SortAscending(numbers);
 
-            var distinct = this.removeDuplicatesService.RemoveDuplicates(sorted);
+            var distinct = this.duplicatesService.RemoveDuplicates(sorted);
 
             foreach (var value in distinct)
             {

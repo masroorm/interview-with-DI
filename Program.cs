@@ -24,7 +24,7 @@
                    services
                    .AddScoped<ISort, SortService>()
                    .AddScoped<IBeginInterview, BeginInterviewService>()
-                   .AddScoped<IRemoveDuplicates, RemoveDuplicatesService>());
+                   .AddScoped<IDuplicates, DuplicatesService>());
 
         static void ExemplifyScoping(IServiceProvider services, string scope)
         {
